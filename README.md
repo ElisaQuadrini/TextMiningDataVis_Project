@@ -1,1 +1,1 @@
-# TextMiningDataVis_Project
+# Text Mining and Data Visualization Project

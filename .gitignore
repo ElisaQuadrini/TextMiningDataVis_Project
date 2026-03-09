@@ -67,3 +67,19 @@ glove*
 
 # weights
 *.h5
+
+# HuggingFace checkpoints
+deberta_squad/
+checkpoint-*/
+*.pt
+*.pth
+*.safetensors
+
+# datasets
+dataset/
+data/
+*.json
+
+# cache
+__pycache__/
+.ipynb_checkpoints/

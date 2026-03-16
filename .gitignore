@@ -1,0 +1,104 @@
+# =========================
+# DATA
+# =========================
+Dataset/
+TextMining_splits/
+
+# =========================
+# PYTHON
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# VIRTUAL ENVIRONMENTS
+# =========================
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Conda
+*.conda
+.conda/
+.condarc
+
+# =========================
+# JUPYTER
+# =========================
+.ipynb_checkpoints/
+
+# =========================
+# VS CODE
+# =========================
+.vscode/
+
+# =========================
+# SYSTEM FILES
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# LOG FILES
+# =========================
+*.log
+
+# =========================
+# ENV FILES
+# =========================
+.env
+.env.*
+
+# Word embeddings
+glove*
+*.vec
+*.bin
+*.txt
+
+# weights
+*.h5
+
+# HuggingFace checkpoints
+deberta_squad/
+checkpoint-*/
+*.pt
+*.pth
+*.safetensors
+
+# datasets
+dataset/
+data/
+*.json
+
+# cache
+__pycache__/
+.ipynb_checkpoints/
+
+# =========================
+# DATA FILES
+# =========================
+*.csv
+*.tsv
+
+
+# =========================
+# MODELS
+# =========================
+# Ignore model folder
+v2/
+
+# Ignore everything inside results
+results/*
+
+# BUT keep this specific file
+!results/llm_judge_checkpoint.json

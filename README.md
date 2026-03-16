@@ -9,12 +9,9 @@ A comparative study of extractive QA models — from a  BiLSTM-BiDAF baseline to
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Models](#models)
   - [BiLSTM + BiDAF](#1-bilstm--bidaf)
-  - [DeBERTa-v3 + RAG](#2-deberta-v3--rag)
-  - [LLM-based Evaluation (LLaMA)](#3-llm-based-evaluation-llama)
-- [Results](#results)
+  - [DeBERTa-v3 + RAG + LLM-Based evaluation](#2-deberta-v3--rag)
 - [Interactive Dashboard](#interactive-dashboard)
 - [Repository Structure](#repository-structure)
-- [Requirements](#requirements)
 
 ---
 
@@ -143,7 +140,7 @@ It was then asked to rate the prediction on a 1–5 scale and provide a brief ju
 
 ## Interactive Dashboard
 
-Notebook: [`05_dashboard.ipynb`](05_dashboard.ipynb)
+Notebook: [`04_dashboard.ipynb`](04_dashboard.ipynb)
 
 A fully interactive dashboard built with **Plotly** and **Dash** that brings together all results in one place.
 

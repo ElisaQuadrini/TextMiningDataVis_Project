@@ -171,9 +171,9 @@ python dashboard_app.py
 ├── 05_dashboard.ipynb            # Interactive Plotly dashboard
 │
 ├── data/
-│   ├── sample_train.json   # Sampled training set (~70k examples)
-│   └── sample_val.json     # Validation set
-|   └── sample_test.json    # Test set
+│   ├── train_sampled.json   # Sampled training set (~70k examples)
+│   └── val_sampled.json     # Validation set
+|   └── test_sampled.json    # Test set
 │
 ├── models/
 │   ├── bidaf/                    # BiDAF model weights and config

@@ -83,3 +83,22 @@ data/
 # cache
 __pycache__/
 .ipynb_checkpoints/
+
+# =========================
+# DATA FILES
+# =========================
+*.csv
+*.tsv
+
+
+# =========================
+# MODELS
+# =========================
+# Ignore model folder
+v2/
+
+# Ignore everything inside results
+results/*
+
+# BUT keep this specific file
+!results/llm_judge_checkpoint.json

@@ -144,16 +144,12 @@ Notebook: [`04_dashboard.ipynb`](04_dashboard.ipynb)
 
 A fully interactive dashboard built with **Plotly** and **Dash** that brings together all results in one place.
 
-**Sections:**
-
-- **EDA** — interactive versions of all exploratory plots
-- **Model Overview** - models' architecture and training setting
-- **Model Comparison** — side-by-side EM and F1 bar charts, LLaMA evaluation, confusion matrices for answerability classification
-- **Live QA Demo** — input a custom question and context, run inference on models, and compare their predictions in real time
+- **EDA**: Dataset overview, lenght analysis (token), WH-words, top topics, bigrams, tokens, Depedency parsing;
+- **BiLSTM + BiDAF**: model overview, architecture, tokenisation and training setting, metrics, live input testing;
+- **DeBERTa**: model overview, architetecture, tokenisation and training setting, metrics, RAG pipeline, LLM-based evaluation, live input testing (DeBERta and RAG).
 
 Run the dashboard locally with:
 
-```
 
 ## Repository Structure
 .
@@ -197,8 +193,7 @@ cd TextMiningDataVis_Project
 02_BiLSTM_BiDAF  
 03_DeBERTav3_RAG_LLM.ipynb  
 
-To use the Dashboard:
-
+To use the Dashboard follow the instraction above.
 
 ---
 
@@ -212,6 +207,13 @@ If you use this work or build on it, please cite the original dataset and model 
   author    = {Rajpurkar, Pranav and Jia, Robin and Liang, Percy},
   booktitle = {ACL},
   year      = {2018}
+}
+
+@inproceedings{he2021deberta,
+  title  = {Bidirectional Attention Flow for Machine Comprehension},
+  author = {Seo, M., Kembhavi, A., Farhadi, A., & Hajishirzi, H.},
+  booktitle = {ICLR},
+  year   = {2017}
 }
 
 @inproceedings{he2021deberta,

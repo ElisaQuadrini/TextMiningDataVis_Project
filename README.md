@@ -150,7 +150,7 @@ A fully interactive dashboard built with **Plotly** and **Dash** that brings tog
 
 Run the dashboard locally with:
 
-
+```
 ## Repository Structure
 .
 ├── 01_EDA.ipynb                       # Exploratory Data Analysis

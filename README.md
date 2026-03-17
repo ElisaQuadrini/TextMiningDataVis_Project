@@ -134,7 +134,7 @@ It was then asked to rate the prediction and provide a brief justification. The 
 
 **Key takeaways:**
 - DeBERTa-v3 outperforms BiDAF by a large margin across all metrics, confirming the strength of large pre-trained transformers even on classical extractive QA benchmarks
-- The RAG component doesn't provide an improvement on questions probabibly beacuse the number of context analyzed is too low.
+- The RAG component doesn't provide an improvement on questions probabibly beacuse the number of context analyzed is too low
 - LLM-based evaluation broadly agrees with F1 rankings but reveals cases where automatic metrics are misleading, especially around unanswerable questions
 
 ---

@@ -9,11 +9,11 @@ A comparative study of extractive QA models : from a  BiLSTM-BiDAF baseline to a
 - [Exploratory Data Analysis](#exploratory-data-analysis)
 - [Models](#models)
   - [BiLSTM + BiDAF](#1-bilstm--bidaf)
-  - [DeBERTa-v3 + RAG + LLM-Based evaluation](#2-deberta-v3--rag)
+  - [DeBERTa-v3 + RAG + LLM-Based Evaluation](#2-deberta-v3--rag--llm-based-evaluation)
 - [Interactive Dashboard](#interactive-dashboard)
 - [Repository Structure](#repository-structure)
 - [Reproducibility Instructions](#reproducibility-instructions)
-
+- [Citations](#citations)
 ---
 
 ## Introduction

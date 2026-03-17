@@ -175,19 +175,17 @@ Run the dashboard locally with:
 
 To reproduce the experiments, please follow the steps below:
 
-**1. Clone the repository**
+- **Clone the repository**: git clone [https://github.com/ElisaQuadrini/TextMiningDataVis_Project.git](https://github.com/ElisaQuadrini/TextMiningDataVis_Project.git)
 
-git clone [https://github.com/ElisaQuadrini/TextMiningDataVis_Project.git](https://github.com/ElisaQuadrini/TextMiningDataVis_Project.git)
+  ```cd TextMiningDataVis_Project```
 
-cd TextMiningDataVis_Project
-
-**2. Download the pre-trained/fine-tuned weights on your pc:**
+- **Download the pre-trained/fine-tuned weights on your pc:**
 
 [Google Drive Folder](https://drive.google.com/drive/folders/1qrieC-mHhRIrC2OecUTZwMuXtSQfHDb3)
 
-**3. Ensure the model path is correctly set before execution.**
+- **Ensure the model path is correctly set before execution.**
 
-**4. Open and run the notebook:**
+- **Open and run the notebook:**
 
 01_EDA.ipynb  
 02_BiLSTM_BiDAF  

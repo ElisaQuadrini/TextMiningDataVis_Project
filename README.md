@@ -149,7 +149,51 @@ A fully interactive dashboard built with **Plotly** and **Dash** that brings tog
 - **BiLSTM + BiDAF**: model overview, architecture, tokenisation and training setting, metrics, live input testing;
 - **DeBERTa**: model overview, architetecture, tokenisation and training setting, metrics, RAG pipeline, LLM-based evaluation, live input testing (DeBERta and RAG).
 
-Run the dashboard locally with:
+### How to run the dashboard locally
+ 
+#### 1. Download the model weights
+ 
+The model weights are **not included** in the repository (too large for GitHub). Download them from the [Google Drive Folder](https://drive.google.com/drive/folders/1qrieC-mHhRIrC2OecUTZwMuXtSQfHDb3) and place them inside the project folder alongside `04_Dashboard.py`:
+ 
+| File / Folder | Description |
+|---|---|
+| `train_sampled.json` | Training dataset (SQuAD 2.0 sampled) |
+| `final_weights_BiDAF` | BiDAF model checkpoint |
+| `bidaf_vocab.pkl` | BiDAF vocabulary (word2idx / char2idx) |
+| `glove.6B.300d.txt` | GloVe pre-trained embeddings (300d) |
+| `Deberta Squad fine tuned/` | DeBERTa fine-tuned model folder |
+ 
+> **N.B.** All files must be in the **same folder** as `04_Dashboard.py`.
+ 
+#### 2. Create and activate the environment
+ 
+```bash
+conda create -n dashboard python=3.9 -y
+conda activate dashboard
+```
+ 
+#### 3. Install dependencies
+ 
+```bash
+pip install dash dash-bootstrap-components plotly pandas numpy matplotlib wordcloud nltk torch transformers==4.40.0 sentencepiece scikit-learn
+```
+ 
+Then download the NLTK stopwords (only needed once):
+ 
+```bash
+python -c "import nltk; nltk.download('stopwords')"
+```
+ 
+#### 4. Run the dashboard
+ 
+Make sure your terminal is **inside the project folder**, then run:
+ 
+```bash
+cd path/to/your-project-folder
+python 04_Dashboard.py
+```
+ 
+Open your browser at: [http://127.0.0.1:8050](http://127.0.0.1:8050)
 
 ## Repository Structure
 

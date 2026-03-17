@@ -1,6 +1,6 @@
 # Extractive Question Answering on SQuAD 2.0 (Text Mining and Data Visualization)
 
-A comparative study of extractive QA models — from a  BiLSTM-BiDAF baseline to a fine-tuned DeBERTa-v3 augmented with RAG — evaluated with both automatic metrics and LLM-based human-like assessment.
+A comparative study of extractive QA models : from a  BiLSTM-BiDAF baseline to a fine-tuned DeBERTa-v3 augmented with RAG, evaluated with both automatic metrics and LLM-based human-like assessment.
 
 ## Table of Contents
 
@@ -150,8 +150,9 @@ A fully interactive dashboard built with **Plotly** and **Dash** that brings tog
 
 Run the dashboard locally with:
 
-```
 ## Repository Structure
+
+```
 .
 ├── 01_EDA.ipynb                       # Exploratory Data Analysis
 ├── 02_BiLSTM_BiDAF.ipynb              # BiLSTM + BiDAF — training & evaluation
@@ -164,6 +165,7 @@ Run the dashboard locally with:
 │   ├── test_sampled.json              # Test set (~9k examples)
 │   └── GoogleDrive_Link.pdf           # Google Drive link for model weights, GloVe embeddings, and LLM evaluation results
 │
+├── .gitignore
 └── README.md
 ```
 ---

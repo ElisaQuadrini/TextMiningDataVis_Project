@@ -46,7 +46,7 @@ Each example contains:
 
 Notebook: [`01_EDA.ipynb`](01_eda.ipynb)
 
-A thorough EDA was conducted before any modelling. Key analyses include:
+A thorough EDA was conducted before any modelling on the original dataset *train-v2.0.json*. Key analyses include:
 
 **Token-level analysis**
 - Distribution of context lengths, question lengths, and answer span lengths in tokens
@@ -164,6 +164,7 @@ Run the dashboard locally with:
 │   ├── train_sampled.json             # Sampled training set (~70k examples)
 │   ├── val_sampled.json               # Validation set (~9k examples)
 │   ├── test_sampled.json              # Test set (~9k examples)
+│   ├── train-v2.0.json                # Original SQuAD 2.0 training dataset (~130k examples)
 │   └── GoogleDrive_Link.pdf           # Google Drive link for model weights, GloVe embeddings, and LLM evaluation results
 │
 ├── .gitignore

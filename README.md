@@ -93,6 +93,7 @@ The attention flow layer computes a similarity matrix between every context toke
 - Character-level CNN for handling OOV tokens
 - Cross-entropy loss on start and end positions independently
 - Trained from scratch without any pre-trained transformer backbone
+```
 
 ---
 

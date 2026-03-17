@@ -168,7 +168,7 @@ Run the dashboard locally with:
 ```
 ---
 
-## Reproducibility Intructions
+## Reproducibility Instructions
 
 To reproduce the experiments, please follow the steps below:
 

@@ -153,9 +153,7 @@ A fully interactive dashboard built with **Plotly** and **Dash** that brings tog
 
 Run the dashboard locally with:
 
-...
-
----
+```
 
 ## Repository Structure
 .
@@ -171,10 +169,7 @@ Run the dashboard locally with:
 │   └── GoogleDrive_Link.pdf           # Google Drive link for model weights, GloVe embeddings, and LLM evaluation results
 │
 └── README.md
-
----
-
-...
+```
 
 > **GPU note:** for DeBERTa-v3 fine-tuning a GPU with at least 16 GB VRAM is recommended. For inference only, 8 GB is sufficient. The BiDAF model can be trained on CPU, though training is significantly faster on GPU.
 

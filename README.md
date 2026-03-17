@@ -93,7 +93,6 @@ The attention flow layer computes a similarity matrix between every context toke
 - Character-level CNN for handling OOV tokens
 - Cross-entropy loss on start and end positions independently
 - Trained from scratch without any pre-trained transformer backbone
-```
 
 ---
 
@@ -174,6 +173,8 @@ Run the dashboard locally with:
 └── README.md
 
 ---
+
+...
 
 > **GPU note:** for DeBERTa-v3 fine-tuning a GPU with at least 16 GB VRAM is recommended. For inference only, 8 GB is sufficient. The BiDAF model can be trained on CPU, though training is significantly faster on GPU.
 

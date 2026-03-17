@@ -195,34 +195,26 @@ To reproduce the experiments, please follow the steps below:
 ## Citation
 
 If you use this work or build on it, please cite the original dataset and model papers:
-
 ```bibtex
 @inproceedings{rajpurkar2018squad2,
   title     = {Know What You Don't Know: Unanswerable Questions for SQuAD},
   author    = {Rajpurkar, Pranav and Jia, Robin and Liang, Percy},
-  booktitle = {ACL},
+  booktitle = {Proceedings of ACL},
   year      = {2018}
 }
 
-@inproceedings{he2021deberta,
-  title  = {Bidirectional Attention Flow for Machine Comprehension},
-  author = {Seo, M., Kembhavi, A., Farhadi, A., & Hajishirzi, H.},
-  booktitle = {ICLR},
-  year   = {2017}
-}
-
-@inproceedings{he2021deberta,
-  title  = {DeBERTa: Decoding-enhanced BERT with Disentangled Attention},
-  author = {He, Pengcheng and Liu, Xiaodong and Gao, Jianfeng and Chen, Weizhu},
-  booktitle = {ICLR},
-  year   = {2021}
-}
-
 @inproceedings{seo2017bidaf,
-  title  = {Bidirectional Attention Flow for Machine Comprehension},
-  author = {Seo, Minjoon and Kembhavi, Aniruddha and Farhadi, Ali and Hajishirzi, Hannaneh},
+  title     = {Bidirectional Attention Flow for Machine Comprehension},
+  author    = {Seo, Minjoon and Kembhavi, Aniruddha and Farhadi, Ali and Hajishirzi, Hannaneh},
   booktitle = {ICLR},
-  year   = {2017}
+  year      = {2017}
+}
+
+@inproceedings{he2021debertav3,
+  title     = {DeBERTaV3: Improving DeBERTa using ELECTRA-Style Pre-Training with Gradient-Disentangled Embedding Sharing},
+  author    = {He, Pengcheng and Gao, Jianfeng and Chen, Weizhu},
+  booktitle = {ICLR},
+  year      = {2023}
 }
 ```
 

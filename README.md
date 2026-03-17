@@ -43,7 +43,7 @@ Each example contains:
 
 ## Exploratory Data Analysis
 
-Notebook: [`01_eda.ipynb`](01_eda.ipynb)
+Notebook: [`01_EDA.ipynb`](01_eda.ipynb)
 
 A thorough EDA was conducted before any modelling. Key analyses include:
 
@@ -71,7 +71,7 @@ All EDA plots are reproduced interactively in the dashboard (see [Interactive Da
 
 ### 1. BiLSTM + BiDAF
 
-Notebook: [`02_bilstm_bidaf.ipynb`](02_bilstm_bidaf.ipynb)
+Notebook: [`02_BiLSTM_BiDAF.ipynb`](02_bilstm_bidaf.ipynb)
 
 The first model is a reimplementation of the **Bidirectional Attention Flow (BiDAF)** architecture (Seo et al., 2017), enriched with bidirectional LSTMs at each encoding layer.
 
@@ -98,18 +98,17 @@ The attention flow layer computes a similarity matrix between every context toke
 
 ### 2. DeBERTa-v3 + RAG + LLM-based Evaluation 
 
-Notebook: [`03_deberta_rag.ipynb`](03_deberta_rag.ipynb)
+Notebook: [`03_DeBERTa_RAG_LMM.ipynb`](03_deberta_rag.ipynb)
 
 The second model fine-tunes **`microsoft/deberta-v3-base`** on SQuAD 2.0 with a Retrieval-Augmented Generation (RAG) extension.
 
-**Why DeBERTa-v3?**
 DeBERTa (Decoding-enhanced BERT with disentangled attention) improves over BERT and RoBERTa by:
 - Using **disentangled attention** — content and position embeddings are kept separate and attended over independently
 - Adding a **virtual token** at the output layer to improve span boundary detection
 - DeBERTa-v3 further replaces MLM pre-training with **ELECTRA-style replaced token detection**, yielding stronger representations with the same compute
 
 **RAG extension:**
-A lightweight retrieval component was added on top of the standard extractive QA head. For each question, a small set of candidate passages is retrieved from a document index (FAISS) and re-ranked before the reader processes the top-k results. This simulates an open-domain QA setup layered on top of the closed-domain SQuAD evaluation.
+A lightweight retrieval component was added on top of the standard extractive QA head. For each question, a small set of candidate passages is retrieved from a document index and re-ranked before the reader processes the top-k results. This simulates an open-domain QA setup layered on top of the closed-domain SQuAD evaluation.
 
 **Fine-tuning setup:**
 - Model: `microsoft/deberta-v3-base`
@@ -128,7 +127,7 @@ For a random sample of model predictions, LLaMA was given:
 - The gold answer
 - The predicted answer from each model
 
-It was then asked to rate the prediction on a 1–5 scale and provide a brief justification. The LLM scores were compared against EM and F1 to measure correlation and identify systematic failure modes (e.g., cases where F1 = 0 but the answer is semantically correct).
+It was then asked to rate the prediction and provide a brief justification. The LLM scores were compared against EM and F1 to measure correlation and identify systematic failure modes (e.g., cases where F1 = 0 but the answer is semantically correct).
 
 ---
 
@@ -148,51 +147,30 @@ A fully interactive dashboard built with **Plotly** and **Dash** that brings tog
 **Sections:**
 
 - **EDA** — interactive versions of all exploratory plots
-- **Model Comparison** — side-by-side EM and F1 bar charts, LLaMA score distributions, confusion matrices for answerability classification
-- **Live QA Demo** — input a custom question and context, run inference on both models, and compare their predictions in real time
-- **Metric Audit** — scatter plot of F1 vs LLaMA score per example, with filters to isolate disagreement cases
+- **Model Overview** - models' architecture and training setting
+- **Model Comparison** — side-by-side EM and F1 bar charts, LLaMA evaluation, confusion matrices for answerability classification
+- **Live QA Demo** — input a custom question and context, run inference on models, and compare their predictions in real time
 
 Run the dashboard locally with:
 
-```bash
-jupyter notebook 05_dashboard.ipynb
-# or, if exported as a standalone app:
-python dashboard_app.py
-```
+...
 
 ---
 
 ## Repository Structure
-
-```
 .
-├── 01_eda.ipynb                  # Exploratory Data Analysis
-├── 02_bilstm_bidaf.ipynb         # BiLSTM + BiDAF model: training & evaluation
-├── 03_deberta_rag_llm.ipynb      # DeBERTa-v3 fine-tuning + RAG extension + LLaMA-based evaluation of automatic metrics
-├── 05_dashboard.ipynb            # Interactive Plotly dashboard
+├── 01_EDA.ipynb                       # Exploratory Data Analysis
+├── 02_BiLSTM_BiDAF.ipynb              # BiLSTM + BiDAF — training & evaluation
+├── 03_DeBERTa_RAG_LLM.ipynb           # DeBERTa-v3 fine-tuning, RAG extension, LLM-based evaluation
+├── 04_Dashboard.ipynb                 # Interactive Plotly/Dash dashboard
 │
-├── data/
-│   ├── train_sampled.json   # Sampled training set (~70k examples)
-│   └── val_sampled.json     # Validation set
-|   └── test_sampled.json    # Test set
+├── Data/
+│   ├── train_sampled.json             # Sampled training set (~70k examples)
+│   ├── val_sampled.json               # Validation set (~9k examples)
+│   ├── test_sampled.json              # Test set (~9k examples)
+│   └── GoogleDrive_Link.pdf           # Google Drive link for model weights, GloVe embeddings, and LLM evaluation results
 │
-├── models/
-│   ├── bidaf/                    # BiDAF model weights and config
-│   └── deberta/                  # DeBERTa-v3 fine-tuned checkpoint
-│
-├── results/
-│   ├── bidaf_predictions.json
-│   ├── deberta_predictions.json
-│   └── llm_scores.json           # LLaMA evaluation scores
-│
-├── utils/
-│   ├── preprocessing.py          # Tokenization, sliding window, data loaders
-│   ├── metrics.py                # EM, F1, normalization utilities
-│   └── rag.py                    # FAISS index + retrieval helpers
-│
-├── requirements.txt
 └── README.md
-```
 
 ---
 
@@ -223,6 +201,8 @@ cd TextMiningDataVis_Project
 03_DeBERTav3_RAG_LLM.ipynb  
 
 To use the Dashboard:
+
+
 ---
 
 ## Citation

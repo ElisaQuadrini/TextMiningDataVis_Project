@@ -179,19 +179,17 @@ To reproduce the experiments, please follow the steps below:
 
   ```cd TextMiningDataVis_Project```
 
-- **Download the pre-trained/fine-tuned weights on your pc:**
-
-[Google Drive Folder](https://drive.google.com/drive/folders/1qrieC-mHhRIrC2OecUTZwMuXtSQfHDb3)
+- **Download the pre-trained/fine-tuned weights on your pc:** [Google Drive Folder](https://drive.google.com/drive/folders/1qrieC-mHhRIrC2OecUTZwMuXtSQfHDb3)
 
 - **Ensure the model path is correctly set before execution.**
 
 - **Open and run the notebook:**
 
-01_EDA.ipynb  
-02_BiLSTM_BiDAF  
-03_DeBERTav3_RAG_LLM.ipynb  
+  - 01_EDA.ipynb  
+  - 02_BiLSTM_BiDAF  
+  - 03_DeBERTav3_RAG_LLM.ipynb  
 
-To use the Dashboard follow the instraction above.
+  - To use the Dashboard follow the instraction above.
 
 ---
 

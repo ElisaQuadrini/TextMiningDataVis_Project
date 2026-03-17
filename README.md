@@ -12,6 +12,7 @@ A comparative study of extractive QA models — from a  BiLSTM-BiDAF baseline to
   - [DeBERTa-v3 + RAG + LLM-Based evaluation](#2-deberta-v3--rag)
 - [Interactive Dashboard](#interactive-dashboard)
 - [Repository Structure](#repository-structure)
+- [Reproducibility Instructions](#reproducibility-instructions)
 
 ---
 
@@ -197,6 +198,27 @@ python dashboard_app.py
 
 > **GPU note:** for DeBERTa-v3 fine-tuning a GPU with at least 16 GB VRAM is recommended. For inference only, 8 GB is sufficient. The BiDAF model can be trained on CPU, though training is significantly faster on GPU.
 
+---
+
+## Reproducibility Intructions
+
+To reproduce the experiments, please follow the steps below:
+
+1. Clone the repository
+git clone [https://github.com/ElisaQuadrini/TextMiningDataVis_Project.git](https://github.com/ElisaQuadrini/TextMiningDataVis_Project.git) 
+cd TextMiningDataVis_Project
+
+2. Download the pre-trained/fine-tuned weights on your pc:
+   [Google Drive Folder](https://drive.google.com/drive/folders/1qrieC-mHhRIrC2OecUTZwMuXtSQfHDb3)
+
+3. Ensure the model path is correctly set before execution.
+
+4. Open and run the notebook:
+   01_EDA.ipynb
+   02_
+   03_DeBERTav3_RAG_LLM.ipynb
+
+To use the Dashboard:
 ---
 
 ## Citation

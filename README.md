@@ -204,24 +204,29 @@ python dashboard_app.py
 
 To reproduce the experiments, please follow the steps below:
 
-1. Clone the repository
+**1. Clone the repository**
 
 git clone [https://github.com/ElisaQuadrini/TextMiningDataVis_Project.git](https://github.com/ElisaQuadrini/TextMiningDataVis_Project.git) 
 
 cd TextMiningDataVis_Project
 
-2. Download the pre-trained/fine-tuned weights on your pc:
+
+**2. Download the pre-trained/fine-tuned weights on your pc:**
    [Google Drive Folder](https://drive.google.com/drive/folders/1qrieC-mHhRIrC2OecUTZwMuXtSQfHDb3)
+   
 
-3. Ensure the model path is correctly set before execution.
+**3. Ensure the model path is correctly set before execution.**
 
-4. Open and run the notebook:
+
+**4. Open and run the notebook:**
 
    01_EDA.ipynb
 
    02_BiLSTM_BiDAF
    
    03_DeBERTav3_RAG_LLM.ipynb
+
+
 
 To use the Dashboard:
 ---

@@ -13,7 +13,7 @@ A comparative study of extractive QA models : from a  BiLSTM-BiDAF baseline to a
 - [Interactive Dashboard](#interactive-dashboard)
 - [Repository Structure](#repository-structure)
 - [Reproducibility Instructions](#reproducibility-instructions)
-- [Citations](#citations)
+- [Citation](#citation)
 ---
 
 ## Introduction

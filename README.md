@@ -46,7 +46,7 @@ Each example contains:
 
 Notebook: [`01_EDA.ipynb`](01_eda.ipynb)
 
-A thorough EDA was conducted before any modelling on the original dataset *train-v2.0.json*. Key analyses include:
+A thorough EDA was conducted before any modelling on the sampled version of original dataset *train-v2.0.json*. Key analyses include:
 
 **Token-level analysis**
 - Distribution of context lengths, question lengths, and answer span lengths in tokens

@@ -1,7 +1,8 @@
 # Extractive Question Answering on SQuAD 2.0 (Text Mining and Data Visualization)
 
-A comparative study of extractive QA models : from a  BiLSTM-BiDAF baseline to a fine-tuned DeBERTa-v3 augmented with RAG, evaluated with both automatic metrics and LLM-based human-like assessment.
-
+A comparative study of extractive QA models : from a  BiLSTM-BiDAF baseline to a fine-tuned DeBERTa-v3 augmented with RAG, evaluated with both automatic metrics and LLM-based human-like assessment. 
+By @albertoedoardofaoro @AsiaGrillo @ElisaQuadrini @robertosillitti
+ 
 ## Table of Contents
 
 - [Introduction](#introduction)

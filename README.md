@@ -118,7 +118,7 @@ A lightweight retrieval component was added on top of the standard extractive QA
 - Hardware: GPU (RTX5090 depending on availability)
 - Handling of unanswerable questions: the model is trained to predict a null span `[CLS]` when `is_impossible = True`
 
-**LLM-Based evaluation (LLaMa)**
+**LLM-Based evaluation (LLaMa)**  
 Standard QA metrics (EM and F1) are known to be imperfect: they penalise semantically correct paraphrases and may reward lucky surface overlaps. To audit this, a **LLaMA** model was queried via API to act as an independent judge.
 
 **Evaluation protocol:**

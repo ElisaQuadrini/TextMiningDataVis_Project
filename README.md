@@ -166,9 +166,6 @@ Run the dashboard locally with:
 │
 └── README.md
 ```
-
-> **GPU note:** for DeBERTa-v3 fine-tuning a GPU with at least 16 GB VRAM is recommended. For inference only, 8 GB is sufficient. The BiDAF model can be trained on CPU, though training is significantly faster on GPU.
-
 ---
 
 ## Reproducibility Intructions
@@ -190,6 +187,8 @@ To reproduce the experiments, please follow the steps below:
   - 03_DeBERTav3_RAG_LLM.ipynb  
 
   - To use the Dashboard follow the instraction above.
+
+> **GPU note:** for DeBERTa-v3 fine-tuning a GPU with at least 32 GB VRAM is recommended. For inference only, 8 GB is sufficient. The BiDAF model can be trained on CPU, though training is significantly faster on GPU.
 
 ---
 

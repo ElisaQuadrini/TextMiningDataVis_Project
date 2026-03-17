@@ -202,7 +202,7 @@ Open your browser at: [http://127.0.0.1:8050](http://127.0.0.1:8050)
 ├── 01_EDA.ipynb                       # Exploratory Data Analysis
 ├── 02_BiLSTM_BiDAF.ipynb              # BiLSTM + BiDAF — training & evaluation
 ├── 03_DeBERTa_RAG_LLM.ipynb           # DeBERTa-v3 fine-tuning, RAG extension, LLM-based evaluation
-├── 04_Dashboard.ipynb                 # Interactive Plotly/Dash dashboard
+├── 04_Dashboard.py                    # Interactive Plotly/Dash dashboard
 │
 ├── Data/
 │   ├── train_sampled.json             # Sampled training set (~70k examples)

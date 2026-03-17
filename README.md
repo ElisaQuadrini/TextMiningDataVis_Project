@@ -54,8 +54,8 @@ A thorough EDA was conducted before any modelling. Key analyses include:
 
 **Linguistic analysis**
 - Most common question starters (*who*, *what*, *when*, *where*, *why*, *how*)
-- **Named Entity Recognition (NER)** — entity type distribution in answers (PER, ORG, LOC, …); analysis of which entity types are most commonly the target of questions
-- **Part-of-Speech (POS) tagging** — distribution of POS tags in questions and answers
+- Named Entity Recognition (NER) — entity type distribution in answers (PER, ORG, LOC, …); analysis of which entity types are most commonly the target of questions
+- Part-of-Speech (POS) tagging — distribution of POS tags in questions and answers
 - Dependency parsing
 
 **Structural patterns**
@@ -63,7 +63,7 @@ A thorough EDA was conducted before any modelling. Key analyses include:
 - Unanswerable vs answerable question length comparison
 - Vocabulary size and token frequency distributions
 
-All EDA plots are reproduced interactively in the dashboard (see [Interactive Dashboard](#interactive-dashboard)).
+Most EDA plots are reproduced interactively in the dashboard (see [Interactive Dashboard](#interactive-dashboard)).
 
 ---
 

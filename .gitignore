@@ -75,10 +75,7 @@ checkpoint-*/
 *.pth
 *.safetensors
 
-# datasets
-dataset/
-data/
-*.json
+
 
 # cache
 __pycache__/

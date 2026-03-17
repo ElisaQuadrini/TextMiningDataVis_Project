@@ -147,7 +147,7 @@ A fully interactive dashboard built with **Plotly** and **Dash** that brings tog
 
 - **EDA**: Dataset overview, lenght analysis (token), WH-words, top topics, bigrams, tokens, Depedency parsing;
 - **BiLSTM + BiDAF**: model overview, architecture, tokenisation and training setting, metrics, live input testing;
-- **DeBERTa**: model overview, architetecture, tokenisation and training setting, metrics, RAG pipeline, LLM-based evaluation, live input testing (DeBERta and RAG).
+- **DeBERTa**: model overview, architecture, tokenisation and training setting, metrics, RAG pipeline, LLM-based evaluation, live input testing (DeBERta and RAG).
 
 ### How to run the dashboard locally
  

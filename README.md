@@ -140,7 +140,7 @@ It was then asked to rate the prediction and provide a brief justification. The 
 
 ## Interactive Dashboard
 
-Notebook: [`04_dashboard.ipynb`](04_dashboard.ipynb)
+Notebook: [`04_Dashboard.py`](04_dashboard.ipynb)
 
 A fully interactive dashboard built with **Plotly** and **Dash** that brings together all results in one place.
 
